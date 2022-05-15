@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+  <main id="container">
+    <div id="top">
+      <h1>calc</h1>
+      <div id="switcher">
+        <p>THEME</p>
+        <div id="switch">
+          <input type="radio" id="first-theme" onclick="switchTheme('first-theme')">
+          <input type="radio" id="second-theme" onclick="switchTheme('second-theme')">
+          <input type="radio" id="third-theme" onclick="switchTheme('third-theme')">
+        </div>
+      </div>
+    </div>
+    <div id="center">
+      <input type="text" id="textinput" disabled>
+    </div>
+    <div id="bottom">
+      <div id="line1">
+        <button onclick="set_a_number(7)" class="button" id="botton_7">7</button>
+        <button onclick="set_a_number(8)" class="button">8</button>
+        <button onclick="set_a_number(9)" class="button">9</button>
+        <button id="del" onclick="set_a_number('del')" class="button">DEL</button>
+      </div>
+      <div id="2ªline">
+        <button onclick="set_a_number(4)" class="button">4</button>
+        <button onclick="set_a_number(5)" class="button">5</button>
+        <button onclick="set_a_number(6)" class="button">6</button>
+        <button onclick="set_a_number('+')" class="button">+</button>
+      </div>
+      <div id="3ºline">
+        <button onclick="set_a_number(1)" class="button">1</button>
+        <button onclick="set_a_number(2)" class="button">2</button>
+        <button onclick="set_a_number(3)" class="button">3</button>
+        <button onclick="set_a_number('-')" class="button">-</button>
+      </div>
+      <div  id="4ºline">
+        <button onclick="set_a_number('.')" class="button">.</button>
+        <button onclick="set_a_number(0)" class="button">0</button>
+        <button onclick="set_a_number('/')" class="button">/</button>
+        <button onclick="set_a_number('*')" class="button">x</button>
+      </div>
+      <div id="line5">
+        <button id="reset" onclick="set_a_number('reset')" class="button">RESET</button>
+        <button id="equal" onclick="calc()" class="button">=</button>
+      </div>
+    </div>
+  </main>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+  <script src="code/themes.js"></script>
+  <script src="code/calculator.js"></script>
+</body>
+</html>
