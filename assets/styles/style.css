@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #3B4664;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 490px;
+    height: 640px;
+}
+
+main div{
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+main div#top{
+    width: 100%;
+    height: 15%;
+
+    color: white;
+
+    display: flex;
+}
+
+main div#top > h1{
+    width: 50%;
+    height: 100%;
+    margin-left: 1vw;
+}
+main div#top > div{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+div#switcher{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+div#switcher p{
+    margin-top: 1vh;
+    font-weight: bolder;
+}
+div#switch{
+    background: #181F32;
+    height: 32px;
+    width: 84px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#switch input{
+    width: 20px;
+    height: 20px;
+}
+main div#center{
+    width: 100%;
+    height: 20%;
+}
+main div#center > input{
+    background: #181F32;
+    color: white;
+    
+    width: 100%;
+    height: 100%;
+
+    border-radius: 8px;
+    outline: none;
+    border: none;
+
+    font-size: 4em;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+    text-align: right;
+}
+main div#bottom{
+    background: #262C46;
+    width: 100%;
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#bottom > div{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+main div#bottom > div > button.button{
+    height:60px;
+    width: 90px;
+
+    border-radius: 10px;
+
+    background: #EAE3DB;
+    border: none;
+    border-bottom: 5px solid #B2A295;
+
+    color: #525461;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+main div#bottom > div > button:hover{
+    filter: brightness(80%);
+}
+main div#bottom > div > button:active{
+    border-bottom: 3px solid #B2A295;
+}
+main div#bottom > div#line5 > button{
+    width: 200px;
+    color: white;
+}
+
+main div#bottom > div#line5 > button#reset{
+    background: #647299;
+    border-bottom: 5px solid #414E71;
+}
+main div#bottom > div#line5 > button#reset:active{
+    border-bottom: 3px solid #414E71;
+}
+main div#bottom > div#line5 > button#equal{
+    background: #D13F30;
+    border-bottom: 5px solid #96271C;
+}
+main div#bottom > div#line5 > button#equal:active{
+    border-bottom: 3px solid #96271C;
+}
+main div#bottom > div#line1 > button#del{
+    background: #647299;
+    border-bottom: 5px solid #404E75;
+    color: white;
+}
+main div#bottom > div#line1 > button#del:active{
+    border-bottom: 3px solid #404E75;
+}
+
+@media only screen and (max-width: 700px){
+    main{
+        width: 95%;
+        height: 90%;
+    }
+    main div#bottom > div > button.button{
+        width: 20%;
+    }
+}
